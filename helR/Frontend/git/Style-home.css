@@ -1,0 +1,730 @@
+
+.Home-p1{
+  min-height: 100vh;
+  background:url('../images/16683475_5781107.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.Header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ 
+  margin-top: 5px;
+  margin-left: 7px;
+  padding: 5px 100px;
+  /* height: -1px; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 100;
+  
+  
+
+}
+.logo{
+  font-size: 40px;
+  color:#202c35;
+  text-decoration: none;
+  font-weight: 700;
+  position: relative;
+  right: 22%;
+  top: -9px;
+  backdrop-filter: blur(2px); 
+  background: transparent;
+
+}
+.nav a{
+  position: relative;
+  font-size: 20px;
+  color: #d7a0a0;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 30px;
+  left: 50%;
+  padding: 0px;
+  backdrop-filter: blur(8px); /* Adjust the blur amount as needed */
+  background: transparent;
+
+}
+.nav a::before{
+  content: '';
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #d7a0a0;
+  transition: .3s;
+}
+.nav a:hover::before{
+  width: 100%;
+  
+}
+
+.nav a.active{
+text-decoration-line: underline;
+}
+
+#name{
+  position: absolute;
+  color: #f9f9d8;
+  top: 250px;
+  right: 18%;
+  margin: 10px;
+  width: 170px;
+  padding: 10px;
+  font-weight: 900;
+  font-size: 90px;
+}
+#tagline{
+  position: absolute;
+  color: #f5b539;
+  align-items: center;
+  /* background-color: red; */
+  top: 350px;
+
+  right: 140px;
+  font-weight: 200;
+  font-size: 25px;
+  margin: 10px;
+  width: 280px;
+  
+  
+
+}
+
+.buttonhome{
+  position: absolute;
+  top:500px;
+  right: 7%;
+  width: 370px;
+  margin: 2px;
+  padding: 3px;
+  cursor: pointer;
+  
+}
+.btn1{
+  padding: 20px 40px;
+  background-color:#f5b539;
+  color: #614051;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+
+}
+.btn2{
+  padding: 20px 40px;
+  margin-left: 40px;
+  background-color:#f5b539;
+  color: #614051;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+}
+.main-text{
+
+  position: relative;
+  bottom:60px;
+}
+
+.Home-p2{
+  position: relative;
+}
+.cards{
+  display: flex;
+  flex: 1;
+  border:30px #202c35;
+  margin: 30px;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+
+.login{
+
+    font-family: muli-regular;
+    color: #666;
+    font-size: 13px;
+    margin: 0
+
+}
+
+.Price{
+ display: flex;
+ margin: 250px;
+ gap: 40px;
+ 
+}
+
+/*  */
+/*  */
+
+/******************************************************************\
+ * READ FIRST:
+ *
+ * The target for this solution is keep compatibility with old
+ * browsers by using only the float property.
+ *
+ * Four Card Section Challenge | Main Stylesheet.
+ *
+ * Challenge by Frontend Mentor. Coded by Alfonso Suarez.
+ * 
+ ******************************************************************/
+
+/*
+ * # Common Styles Rules 
+ */
+
+/*
+ * ## Global
+ */
+
+/* 
+ * I would prefer to declare variables, but due the bad compatibility
+ * between IE browsers and CSS variables, I omitted their use.
+ *
+:root {
+  --color-prim-cyan:   hsl(180, 62%, 55%);
+  --color-prim-red:    hsl(0, 78%, 62%);
+  --color-prim-orange: hsl(34, 97%, 64%);
+  --color-prim-blue:   hsl(212, 86%, 64%);
+  --color-neut-vdblue: hsl(234, 12%, 34%);
+  --color-neut-grblue: hsl(229, 6%, 66%);  
+}
+ *
+ */
+
+/*
+ * ## Document Body
+ */
+
+ #Services {
+  /* Clean content offset */
+  margin: 0; padding: 200px;
+
+  /* Set common font styles */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.services-container {
+  background-color: #F3EEEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/*
+ * ## Elements Styles
+ */
+ #servicess2 {
+  position: absolute;
+  top: 90%;
+  left: 36%;
+  font-size: 90px;
+  font-weight: 600;
+ 
+}
+h1, h2 {
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+p { color: #212A3E; }
+
+/* - - - */
+
+/*
+ * # Specific Styles Rules
+ */
+
+/*
+ * ## Main Header Element
+ */
+
+header {
+  margin: 80px 30px 75px;
+  text-align: center;
+}
+
+header > h1 {
+  margin: 20px 0;
+  font-weight: 200;
+}
+
+header > h1 strong {
+  font-weight: 600;
+}
+
+header > p {
+  max-width: 520px;
+  margin: auto;
+}
+
+@media (max-width: 443px) {
+  header > h1 { font-size: 1.6em; }
+}
+ 
+/*
+ * ## Cards Container Class
+ */
+
+.cards-container {
+  /* List Styling Clean-Up */
+  list-style: none;
+  padding: 0; margin: 0;
+
+  /* Alignment */
+  margin: auto;
+}
+
+/*
+ * ### Responsive Layout Rules
+ */
+
+/* When viewport width is equal or greater than 788 pixels,
+ * the cards container will fix its width and will append the
+ * clear fix pseudo-class to avoid float property issues.
+ *
+ * The width will depend from the current viewport width.
+ * If is greater than 1166 pixels, will be 1106 pixels.
+ * Else, then will be 728 pixels.
+ */
+
+@media (min-width: 788px) {
+  .cards-container { 
+    width: 728px;
+  }
+  /* Clear Fix */
+  .cards-container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@media (min-width: 1166px) {
+  .cards-container {
+    width: 1106px;
+  }
+}
+
+/*
+ * ## Feature Card Class
+ */
+
+[class$='feature-card'] {
+  /* Positioning and Sizing */
+  position: relative;
+  box-sizing: border-box;
+  width: 350px; height: 250px;
+
+  /* Alignment */
+  margin: 0;
+  padding: 32px;
+
+  /* Box Details */
+  border-radius: 10px;
+  border-top: solid 5px black;
+  box-shadow: 2px 5px 20px rgb(0,0,0,0.1);
+}
+ 
+/*
+ * ### Inner Elements
+ */
+
+[class$='feature-card'] h2, [class$='feature-card'] p
+ {
+   margin: 0; 
+   position: relative;
+   
+   z-index: 100; 
+}
+
+[class$='feature-card'] .card-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;  
+}
+
+[class$='feature-card'] .Servicesimg {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  max-width: 80%; /* Adjust this value as needed */
+  max-height: 80%; /* Adjust this value as needed */
+  width: auto;
+  height: auto;
+  filter: blur(2px);
+  z-index: 0;
+}
+
+/*
+ * ### Top Border Colors Rules
+ */
+
+[class$='feature-card'][class*='cyan'] {
+  border-color: hsl(180, 62%, 55%);
+}
+
+[class$='feature-card'][class*='red'] {
+  border-color: hsl(0, 78%, 62%);
+}
+
+[class$='feature-card'][class*='orange'] {
+  border-color: hsl(34, 97%, 64%);
+}
+
+[class$='feature-card'][class*='blue'] {
+  border-color: hsl(212, 86%, 64%);
+}
+
+/*
+ * ### Responsive Layout Rules
+ */
+
+/* When the viewport width is less than 788 pixels, the container
+ * will not be fixed and every card will arrange normally one over
+ * other. This layout is comfortable for mobile devices.
+ *
+ * But if is equal or greather, every card will set the float
+ * property to the left.
+ *
+ * They will sort smartly on a grid of two columns and two rows if
+ * the current viewport width is less than 1166 pixels, that is,
+ * for notebooks and tablets screens.
+ *
+ * Else, then they will sort like the final challenge for desktop
+ * larger screens (with a viewport width greather than 1166 pixels.)
+ *
+ * I had to hard coded every effect because I only use float
+ * properties. And I didn't went to use auxiliar HTML elements,
+ * trying to keep separation of concerns.
+ */
+
+@media (min-width: 788px) {
+  [class$='feature-card'] {
+    float: left;
+  }
+
+  @media (min-width: 1166px) {
+    
+    [class$='feature-card']:first-child {
+      margin: 140px 0;
+    }
+   
+    [class$='feature-card']:nth-child(2),
+    [class$='feature-card']:nth-child(3) {
+      margin: 0 22px;
+    }
+
+    [class$='feature-card']:last-child {
+      margin-top: -110px;
+    }
+
+    [class$='feature-card']:nth-child(3) {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 1165px) {
+
+    [class$='feature-card']:nth-child(3),
+    [class$='feature-card']:nth-child(4) {
+      margin-top: 30px;
+    }
+
+    [class$='feature-card']:nth-child(2),
+    [class$='feature-card']:nth-child(4) {
+      margin-left: 28px;
+    }
+  }
+}
+
+@media (max-width: 787px) {
+
+  [class$='feature-card'] {
+    width: 300px; height: 220px;
+    margin: auto;
+  }
+
+  [class$='feature-card']:not(:first-child) {
+    margin-top: 22px;
+  }
+}
+/*  */
+/*  */
+/*  */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+:root {
+  --baseColor: #656c7c;
+  --baseSize: 16px;
+  --baseLineHeight: 1.5;
+  --fontFamily: Inter, sans-serif;
+  --pink: #ea4c89;
+  --pinkLight: #ffecf0;
+  --blue: #1769ff;
+  --redTick: url("data:image/svg+xml,%3Csvg width='18' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.552.134 5.717 10.97 1.448 6.701 0 8.149l5.717 5.717L18 1.583 16.552.134Z' fill='%23EA455F'/%3E%3C/svg%3E%0A");
+  --whiteTick: url("data:image/svg+xml,%3Csvg width='18' height='14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.552.134 5.717 10.97 1.448 6.701 0 8.149l5.717 5.717L18 1.583 16.552.134Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A");
+  --close: url("data:image/svg+xml,%3Csvg width='18' height='18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 1.414 16.586 0 9 7.586 1.414 0 0 1.414 7.586 9 0 16.586 1.414 18 9 10.414 16.586 18 18 16.586 10.414 9 18 1.414Z' fill='%23B1B8C9'/%3E%3C/svg%3E");
+  --entpIcon: url("data:image/svg+xml,%3Csvg width='42' height='42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.813 11.077 21 1.155l17.187 9.922v19.846L21 40.845 3.813 30.923V11.077Z' stroke='%23fff' stroke-width='2'/%3E%3Ccircle cx='21' cy='21' r='8' stroke='%23fff' stroke-width='2'/%3E%3C/svg%3E");
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  color: var(--baseColor);
+  font-family: var(--fontFamily);
+  font-size: var(--baseSize);
+  line-height: var(--baseLineHeight);
+}
+body {
+  margin: 0;
+}
+.plans {
+  width: 96%;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+.plans__container {
+  padding: 1rem 0 2rem;
+}
+.plansHero {
+  text-align: center;
+  padding: 5rem 0 4.5rem;
+  line-height: 1.21;
+}
+.plansHero__title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin: 0 0 1rem 0;
+  color: #000;
+}
+.plansHero__subtitle {
+  margin: 0;
+}
+.planItem {
+  --border: 1px solid #e6e6e6;
+  --bgColor: #fff;
+  --boxShadow: none;
+  background-color: var(--bgColor);
+  border: var(--border);
+  border-radius: 1rem;
+  box-shadow: var(--boxShadow);
+  padding: 2rem 1.5rem;
+  display: inline-flex;
+  flex-direction: column;
+}
+.planItem__container {
+  --direction: column;
+  display: grid;
+  grid-auto-flow: var(--direction);
+  grid-auto-columns: 1fr;
+  gap: 1.5rem;
+}
+.planItem .price {
+  --priceMargin: 2rem 0;
+}
+.planItem--pro {
+  --border: 0;
+  --boxShadow: 0px 14px 30px rgba(204, 204, 204, 0.32);
+}
+.planItem--pro .label {
+  --labelBg: #fdb72e;
+  --labelColor: #fff;
+}
+.planItem--entp {
+  --bgColor: var(--blue);
+}
+.planItem--entp .card {
+  --titleColor: #fff;
+  --descColor: rgba(255, 255, 255, 0.8);
+}
+.planItem--entp .card__icon {
+  background-image: var(--entpIcon);
+  background-size: cover;
+}
+.planItem--entp .price, .planItem--entp .featureList {
+  --color: #fff;
+}
+.planItem--entp .featureList {
+  --icon: var(--whiteTick);
+}
+.planItem .buttonprice {
+  margin-top: auto;
+}
+.buttonprice {
+  --bgColor: var(--pinkLight);
+  --color: var(--pink);
+  --shadowColor: rgba(234, 76, 137, 0.3);
+  --outline: var(--pink);
+  border-radius: 0.5rem;
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 0;
+  line-height: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--bgColor);
+  color: var(--color);
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  user-select: none;
+}
+.button--pink {
+  --bgColor: var(--pink);
+  --color: #fff;
+  --shadowColor: rgba(234, 76, 137, 0.5);
+}
+.button--white {
+  --bgColor: #fff;
+  --shadowColor: rgba(255, 255, 255, 0.3);
+  --outline: #fff;
+}
+.buttonprice:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 10px var(--shadowColor);
+}
+.buttonprice:focus-visible {
+  outline-offset: 2px;
+  outline: 2px solid var(--outline);
+}
+.card {
+  --titleColor: #000;
+  --descColor: var(--baseColor);
+}
+.card__header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.card__icon {
+  width: 2.625rem;
+  height: 2.625rem;
+}
+.card h2 {
+  color: var(--titleColor);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0;
+  flex-grow: 1;
+}
+.card__desc {
+  margin: 1.5rem 0 0;
+  color: var(--descColor);
+}
+.label {
+  --labelColor: var(--baseColor);
+  --labelBg: #e5e5e5;
+  font-weight: 600;
+  line-height: 1.25;
+  font-size: 1rem;
+  text-align: center;
+  padding: 0.625rem 1.125rem;
+  border-radius: 2rem;
+  user-select: none;
+  background-color: var(--labelBg);
+  color: var(--labelColor);
+}
+.price {
+  --color: #000;
+  --priceMargin: 0;
+  display: flex;
+  color: var(--color);
+  align-items: center;
+  gap: 0.5625rem;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: var(--priceMargin);
+}
+.price span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--baseColor);
+}
+.featureList {
+  --color: #000;
+  --icon: var(--redTick);
+  --height: 0.875rem;
+  margin: 0 0 2.75rem;
+  padding: 0;
+  font-weight: 500;
+}
+.featureList li {
+  color: var(--color);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.featureList li:before {
+  content: "";
+  background-image: var(--icon);
+  background-size: cover;
+  display: block;
+  width: 1.125rem;
+  height: var(--height);
+}
+.featureList li:last-child {
+  margin-bottom: 0;
+}
+.featureList li.disabled {
+  --color: #b1b8c9;
+  --height: 1.125rem;
+  --icon: var(--close);
+}
+.symbol {
+  --big: 2.625rem;
+  --small: 1.5rem;
+  --radius: 0.25rem;
+  border: 2px solid var(--blue);
+  width: var(--big);
+  height: var(--big);
+  border-radius: var(--radius);
+  position: relative;
+}
+.symbol--rounded {
+  --radius: 2rem;
+}
+.symbol:after {
+  content: "";
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  border: 2px solid var(--pink);
+  width: var(--small);
+  height: var(--small);
+  border-radius: var(--radius);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 640px) {
+  .plans {
+    max-width: 480px;
+    width: 90%;
+  }
+  .planItem__container {
+    --direction: row;
+  }
+}
+@media screen and (min-width: 641px) and (max-width: 768px) {
+  :root {
+    --baseSize: 12px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1080px) {
+  :root {
+    --baseSize: 14px;
+  }
+}
