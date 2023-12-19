@@ -148,19 +148,29 @@ h1:hover:before {
 .flex-2-0{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  height: 300px; /* Increased height */
+  /* align-items: center;
+  height: 300px; 
   margin: 20px;
   border: black 3px;
-  background-color: #ECEE81;
-  border-radius: 40px;
+  background-color: #FBF6EE; */
+  /* color: #FFF; */
+  margin-left: -5px;
+  justify-content: center;
+  width: 59rem;
+  height: 3rem;
+  border-radius: 8px;
+  position: relative;
+  top: 4%;
+  left: 10px;
+  background-color: transparent;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
  /* flex-direction: row; */
 }
 .profile-img{
 flex: 0.3;
 width: 20px;
 position: absolute;
-right: 70%;
+right: 97%;
 top: 3%;
 /* background-color: black; */
 
@@ -175,22 +185,22 @@ top: 3%;
   position: absolute;
   flex: 0.5;
   top: 4%;
-  right: 40rem;
+  right: 46rem;
 }
 .statues{
   position: absolute;
-  top: 6%;
-  right: 43.8rem;
+  top: 60%;
+  right: 49.8rem;
 }
 .call{
 flex: 0.1;
 }
 .call img{
   position: absolute;
-  top: 4.3%;
-  left: 82%;
+  top: 20%;
+  left: 77%;
   margin-right: 50PX;
-  width: 27px;
+  width: 25px;
 }
 .video-call{
 flex: 0.1;
@@ -199,7 +209,7 @@ flex: 0.1;
 .video-call img{
   position: absolute;
   top: 4%;
-  left: 76%;
+  left: 70%;
   margin-right: 50PX;
   
   width: 35px;
