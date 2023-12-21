@@ -40,7 +40,96 @@
   flex:0.8 ;
 
 }
+/* nav start*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+.navbar {
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+  padding-bottom: 5vh;
+  position: fixed;
+  margin: 15px;
+  margin-left: 15px;
+  left: 10px;
+  width: 67px;
+  z-index: 1;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  left: 3px;
+  padding: 0.75rem;
+  border-radius: 10px;
+  width: 67px;
+  box-shadow: 0 10px 50px 0 rgba(5, 4, 62, 0.25);
+}
+li a img{
+  position: fixed;
+  margin: 18px;
+  left: 28px;
+  width: 20px;
+  height: auto;
+}
+li:nth-child(6) {
+  margin-top: 5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #363664;
+}
+li + li {
+  margin-top: 0.75rem;
+}
+.navbar a {
+  color: #FFF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: -5px;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+.navbar a:hover, a:focus, a.active {
+  background-color: #4070f3ac;
+  outline: 0;
+}
+.navbar a:hover span {
+  transform: scale(1);
+  opacity: 1;
+}
+.navbar a i {
+  font-size: 1.375rem;
+}
+.navbar a span {
+  position: absolute;
+  background-color: #4070f3c1;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  left: calc(100% + 1.5rem);
+  transform-origin: center left;
+  transform: scale(0);
+  opacity: 0;
+  transition: 0.15s ease;
+}
 
+/* nav end */
 /* <!--------- Title ---------> */
 
 .message h1 {
