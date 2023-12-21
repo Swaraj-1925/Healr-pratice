@@ -13,17 +13,83 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    
   }
   
   .nav-resourse {
-    flex: 0.2;
+    flex: 0.1;
     /* background-color: black; */
   }
+  /* filter start */
   .filter{
     flex: 0.1;
+    margin-top: 10PX;
     
-    background-color: chartreuse;
   }
+  .filter .header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    /* background-color: #FAF6F0; */
+    border-radius: 19px;
+    box-shadow: 0 19px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropbtn {
+    padding: 8px 32px;
+    font-size: 16px;
+    border: solid #6f8adb1c 4px;
+    border-radius: 29px;
+    background-color: #83a2ff2d;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .selected-filters {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .filter-button {
+    padding: 6px 12px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .filter-button:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  
+  /* filter end */
   .item {
     /* background-color: blue; */
     flex: 0.7;
@@ -34,8 +100,8 @@ html, body {
     display: flex;
     flex-direction: row;
     flex: 1;
-    height: 40%;
-    margin-top: 37px;
+    height: 100%;
+    margin-top: 10px;
     justify-content:left;
     /* border: solid black 1px; */
     border-radius: 8px;
@@ -148,8 +214,8 @@ html, body {
   }
  /* item cart start */
 
- a,
- a:hover {
+ .items a,
+ .items a:hover {
      text-decoration: none;
      color: inherit;
  }
@@ -356,7 +422,5 @@ html, body {
 .items ul{
   width: 50px;
   height: 110px;
-
-  
 }
 /* item card end */
