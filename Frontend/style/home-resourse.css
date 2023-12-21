@@ -1,0 +1,362 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .resourse {
+    position: absolute;
+    left: 100px;
+    margin: 10px;
+    /* background-color: black; */
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-resourse {
+    flex: 0.2;
+    /* background-color: black; */
+  }
+  .filter{
+    flex: 0.1;
+    
+    background-color: chartreuse;
+  }
+  .item {
+    /* background-color: blue; */
+    flex: 0.7;
+    overflow-y: auto;
+  }/* Previous CSS remains unchanged */
+
+.resources-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 40%;
+    margin-top: 37px;
+    justify-content:left;
+    /* border: solid black 1px; */
+    border-radius: 8px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  /* Give some styling and content to the child elements */
+  .resources-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .sep{
+    flex: 0.15;
+  }
+  
+  .resources-logo {
+    flex: 0.2;
+    width: 80%;
+    height: auto;
+    /* background-color: aqua; */
+  }
+  .resources-logo img{
+    width: 80%;
+    height: auto;
+  }
+  
+  .resources-ctg {
+    flex: 0.15; /* Adjusted flex value */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    height: 80%;
+    border-radius: 10px;
+    position: relative;
+    top: 6px;
+    
+}
+.resources-ctg select {
+    width: 100%;
+    
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+  }
+  
+  .resourse-scerch {
+    flex: 0.25; /* Adjusted flex value */
+    /* background-color: teal; */
+  }
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Adjust width as needed */
+    margin: 10px;
+  }
+  
+  .resourse-scerch input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    width: 70%; /* Adjust width as needed */
+  }
+  
+  .resourse-scerch button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resourse-scerch button:hover {
+    background-color: #0056b3;
+  }
+  input[type="text"] {
+    color: black;
+    /* ... other styles ... */
+  }
+  
+  
+  .resourse-liked {
+    flex: 0.1;
+   
+  }
+  .resourse-liked button img{
+    align-items: center;
+    width: 30%;
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+  .resourse-addcart {
+    flex: 0.1;
+ 
+  }
+  .resourse-addcart button img{
+    align-items: center;
+    width: 30%;
+    filter:contrast(50%);
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+ /* item cart start */
+
+ a,
+ a:hover {
+     text-decoration: none;
+     color: inherit;
+ }
+ 
+ .section-products {
+     padding: 80px 0 54px;
+ }
+ 
+ .section-products .header {
+     margin-bottom: 50px;
+ }
+ 
+ .section-products .header h3 {
+     font-size: 1rem;
+     color: #fe302f;
+     font-weight: 500;
+ }
+ 
+ .section-products .header h2 {
+     font-size: 2.2rem;
+     font-weight: 400;
+     color: #444444; 
+ }
+ 
+ .section-products .single-product {
+     margin-bottom: 26px;
+ }
+ 
+ .section-products .single-product .part-1 {
+     position: relative;
+     height: 290px;
+     max-height: 290px;
+     margin-bottom: 20px;
+     overflow: hidden;
+ }
+ 
+ .section-products .single-product .part-1::before {
+     position: absolute;
+     content: "";
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     transition: all 0.3s;
+ }
+ 
+ .section-products .single-product:hover .part-1::before {
+     transform: scale(1.2,1.2) rotate(5deg);
+ }
+ 
+ .section-products #product-1 .part-1::before {
+     background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+     background-size: cover;
+     transition: all 0.3s;
+ }
+ 
+ .section-products #product-2 .part-1::before {
+     background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
+     background-size: cover;
+ }
+ 
+ .section-products #product-3 .part-1::before {
+     background: url("https://i.ibb.co/L8Nrb7p/1.jpg") no-repeat center;
+     background-size: cover;
+ }
+ 
+ .section-products #product-4 .part-1::before {
+     background: url("https://i.ibb.co/cLnZjnS/2.jpg") no-repeat center;
+     background-size: cover;
+ }
+ 
+ .section-products .single-product .part-1 .discount,
+ .section-products .single-product .part-1 .new {
+     position: absolute;
+     top: 15px;
+     left: 20px;
+     color: #ffffff;
+     background-color: #fe302f;
+     padding: 2px 8px;
+     text-transform: uppercase;
+     font-size: 0.85rem;
+ }
+ 
+ .section-products .single-product .part-1 .new {
+     left: 0;
+     background-color: #444444;
+ }
+ 
+ .section-products .single-product .part-1 ul {
+     position: absolute;
+     bottom: -41px;
+     left: 20px;
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     opacity: 0;
+     transition: bottom 0.5s, opacity 0.5s;
+ }
+ 
+ .section-products .single-product:hover .part-1 ul {
+     bottom: 30px;
+     opacity: 1;
+ }
+ 
+ .section-products .single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 17px;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+ 
+ .section-products .single-product .part-1 ul li a {
+     display: inline-block;
+     width: 40px;
+     height: 40px;
+     line-height: 40px;
+     background-color: #ffffff;
+     color: #444444;
+     text-align: center;
+     box-shadow: 0 2px 20px rgb(50 50 50 / 10%);
+     transition: color 0.2s;
+ }
+ 
+ .section-products .single-product .part-1 ul li a:hover {
+     color: #fe302f;
+ }
+ 
+ .section-products .single-product .part-2 .product-title {
+     font-size: 1rem;
+ }
+ 
+ .section-products .single-product .part-2 h4 {
+     display: inline-block;
+     font-size: 1rem;
+ }
+ 
+ .section-products .single-product .part-2 .product-old-price {
+     position: relative;
+     padding: 0 7px;
+     margin-right: 2px;
+     opacity: 0.6;
+ }
+ 
+ .section-products .single-product .part-2 .product-old-price::after {
+     position: absolute;
+     content: "";
+     top: 50%;
+     left: 0;
+     width: 100%;
+     height: 1px;
+     background-color: #444444;
+     transform: translateY(-50%);
+ }
+
+
+.section-products .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+}
+
+.section-products .col-md-6 {
+  flex-basis: calc(50% - 20px); /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+.section-products .col-lg-4 {
+  flex-basis: calc(33.3333% - 20px); /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+
+.section-products .col-xl-3 {
+  flex-basis: calc(25% - 20px); /* Adjust as needed */
+  margin-bottom: 20px; /* Adjust spacing between cards */
+}
+/* Define background images for the shopping-cart and heart classes */
+.shopping-cart {
+  display: inline-block;
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  background-image: url('../icon/shopping-cart.png'); /* Add the path to your shopping cart image */
+  background-size: 60%;
+  background-repeat: no-repeat;
+  
+}
+
+.heart {
+  display: inline-block;
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  background-image: url('../icon/heart.png'); /* Add the path to your heart image */
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.section-products .single-product ul li img {
+  width: 10px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  vertical-align: middle; /* Align images vertically */
+  margin-right: 5px; /* Optional: Add some space between icon and image */
+}
+
+.items ul{
+  width: 50px;
+  height: 110px;
+
+  
+}
+/* item card end */

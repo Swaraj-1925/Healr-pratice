@@ -1,0 +1,289 @@
+/* body{
+  background-color: #ecf9ff60;
+} */
+
+.chatbox{
+  position: absolute;
+  width: 92%;
+  height: 97%;
+  left: 7%;
+  margin: 20px;
+ 
+}
+.flex-0{
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.flex-1{
+  flex: 0.3;
+
+
+}
+
+.flex-2{
+  flex: 0.7;
+
+
+}
+.dm_list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: 1;
+}
+.dm_list-scearchbox{
+  flex:0.2 ;
+  /* background-color: #FFEECC; */
+}
+
+.dm{
+  flex:0.8 ;
+
+}
+
+/* <!--------- Title ---------> */
+
+.message h1 {
+  position: relative;
+  font-size: 2em;
+  letter-spacing:5px;
+  font-family: sans-serif;
+  display:table;
+  margin-left:15%;
+  transition:.6s;
+}
+.message h1:before,
+.message h1:after {
+  content:attr(data-text);
+  transition:.6s;
+}
+.message h1:before {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index:-1;
+  text-shadow:
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px,
+   0px 0px;
+  -webkit-mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+          mask:repeating-linear-gradient(45deg, transparent 0 3px, rgba(0,0,0,0.5) 0 6px);
+}
+.message h1:hover {
+  transform:translate(-10px,-10px);
+}  
+h1:hover:before {
+  text-shadow:
+   1px 1px,
+   2px 2px,
+   3px 3px,
+   4px 4px,
+   5px 5px,
+   6px 6px,
+   7px 7px,
+   8px 8px,
+   9px 9px,
+   10px 10px;
+}
+/* <!--------- scearch ---------> */
+.search-bar {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  margin-left: 4%;
+  border: 7px solid #ddd;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.search-input {
+  background-color: transparent;
+  width: 280px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: relative;
+  left: 10%;
+  margin-left: 5px;
+  font-size: 18px;
+
+}
+.searchimg{
+  width: 30%;
+  height: auto;
+}
+/* <!--------- chatbox ---------> */
+
+.dm_chat{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.nametag{
+  flex: 0.1;
+  height: 50px;
+}
+.name-box{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+}
+.name{
+  flex: 1;
+}
+.statues{
+  flex: 1;
+}
+.flex-2-0{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px; /* Increased height */
+  margin: 20px;
+  border: black 3px;
+  background-color: #ECEE81;
+  border-radius: 40px;
+ /* flex-direction: row; */
+}
+.profile-img{
+flex: 0.3;
+width: 20px;
+position: relative;
+right: 48%;
+top: 113%;
+/* background-color: black; */
+
+}
+.profileimg{
+  border-radius: 40px;
+  width: 50px;
+  /* height: auto; */
+  }
+  
+.name{
+  position: relative;
+  flex: 0.5;
+  top: 70%;
+  right: 19rem;
+}
+.statues{
+  position: relative;
+  top: 70%;
+  right: 19rem;
+}
+.call{
+flex: 0.1;
+}
+.call img{
+  position: relative;
+  top: -114%;
+  left: 190%;
+  margin-right: 50PX;
+  width: 30px;
+}
+.video-call{
+flex: 0.1;
+
+}
+.video-call img{
+  position: absolute;
+  top: 15%;
+  left: 76%;
+  margin-right: 50PX;
+  
+  width: 35px;
+}
+.more{
+flex: 0.1;
+
+}
+.more img{
+  position: absolute;
+  top: 15%;
+    left: 92%;
+  margin-right: 50PX;
+  width: 35px;
+}
+
+.chat{
+  flex: 0.8;
+  
+}
+.chat-content{
+  flex: 1; /* Take remaining space */
+  overflow-y: auto; 
+  margin: 20px;
+  padding: 10px;
+}
+.textbox{
+  flex: 0.1;
+
+}
+
+/* <!--------- send---------> */
+
+.textbox {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  margin-left: 4%;
+  border: 7px solid #ddd;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.text-input {
+  background-color: transparent;
+  position: absolute;
+  margin-top: 15px;
+  left:33%;
+  width: 280px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.text-icon {
+  position: absolute;
+  width: 60PX;
+  left: 88%;
+  bottom: 2%;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #ddd;
+}
+.textimg{
+  width:70%;
+  height: auto;
+}
+
+.plus-icon {
+  position: absolute;
+  width: 60PX;
+  left: 28%;
+  bottom: 2%;
+  margin-left: 5px;
+  font-size: 18px;
+  color: #ddd;
+}
+.plusimg{
+  width:70%;
+  height: auto;
+}
+.separator {
+  width: 2px; /* Adjust the width of the separator */
+  background-color: #19191976; /* Color of the separator */
+  box-shadow: 0 5px 10px rgba(27, 26, 26, 0.15);
+}
