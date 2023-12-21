@@ -56,7 +56,7 @@ li + li {
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: -5px;
+  margin-left: 4px;
   justify-content: center;
   width: 3rem;
   height: 3rem;
@@ -176,3 +176,4 @@ summary i {
     transform: scale(1);
   }
 }
+
